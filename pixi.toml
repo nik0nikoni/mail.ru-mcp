@@ -1,0 +1,16 @@
+[workspace]
+channels = ["conda-forge"]
+name = "mcp"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+
+[pypi-dependencies]
+mcp = { version = ">=2.3.0, <3", extras = ["cli"] }
+imap-tools = ">=1.16.0, <2"
+html2text = ">=2025.4.15, <2026"
+python-dotenv = ">=1.2.4, <2"
